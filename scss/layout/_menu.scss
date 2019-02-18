@@ -1,0 +1,115 @@
+.menu {
+  margin-top: 2em;
+  background-image: url(../../images/barbecue-barbeque-bbq-1268551.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 3em;
+
+  .content {
+    height: auto;
+    width: auto;
+    margin: 5em;
+    background-color: $background-menu;
+    color: black;
+    height: auto;
+    padding: 2em;
+
+    h1 {
+      font-size: 1.8em;
+      letter-spacing: 4px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 1em;
+      padding: 0;
+    }
+
+    .menu-button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 100%;
+      text-align: center;
+      font-size: 1.4em;
+      font-family: "Noto Serif SC", serif;
+      letter-spacing: 2px;
+      padding: 0.5em;
+      border-bottom: rgba(0, 0, 0, 0.7) solid 2px;
+      background-color: transparent;
+      color: black;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom-color: rgba(0, 0, 0, 0);
+        color: white;
+      }
+    }
+    .active {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-bottom-color: rgba(0, 0, 0, 0);
+      color: white;
+    }
+
+    .button-content {
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0;
+      transition: 0.5s;
+
+      .menu-button-inner {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: "Noto Serif SC", serif;
+        letter-spacing: 2px;
+        padding: 0.5em;
+        border-bottom: rgba(255, 255, 255, 0.7) solid 2px;
+        background-color: transparent;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.7);
+          border-bottom-color: rgba(255, 255, 255, 0);
+          color: black;
+        }
+      }
+      .active-inner {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-bottom-color: rgba(255, 255, 255, 0);
+        color: black;
+      }
+
+      .section-text {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        transition: 0.5s;
+        text-align: center;
+        color: white;
+
+        h3 {
+          text-transform: uppercase;
+        }
+      }
+      .show-inner {
+        opacity: 1;
+        max-height: 1000px;
+      }
+    }
+    .show {
+      opacity: 1;
+      max-height: 1000px;
+    }
+  }
+}

@@ -1,0 +1,405 @@
+@media (max-width: 770px) {
+  //   -------------------------------
+  //   -------------------------------
+  //   -------------------------------
+  // Nav
+  //   -------------------------------
+  //   -------------------------------
+  //   -------------------------------
+
+  #navigation {
+    .nav-bar-hide {
+      background-color: rgba(0, 0, 0, 0.781);
+      grid-template-columns: 2fr 4fr 4fr 2fr 2fr 1fr;
+      .logo {
+        grid-column: 1/2;
+      }
+      .wrapper {
+        grid-column: 3/4;
+        text-align: center;
+        .button {
+          button {
+            animation-name: none;
+          }
+        }
+      }
+      .nav-list {
+        padding: 0;
+        margin: 0;
+        grid-column: 4/5;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        align-items: center;
+        grid-area: hide;
+        display: none;
+        a {
+          color: $main;
+          text-decoration: none;
+          padding: 0 4em;
+        }
+      }
+      .toggle {
+        grid-column: 5/6;
+        margin: auto;
+        cursor: pointer;
+
+        span {
+          position: relative;
+          display: block;
+          width: 35px;
+          height: 2px;
+          background: $main;
+          margin: 8px 0;
+        }
+      }
+    }
+    .nav-bar-media {
+      background-color: rgba(0, 0, 0, 0.781);
+      grid-template-columns: 2fr 4fr 4fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      .logo {
+        grid-column: 1/2;
+      }
+      .wrapper {
+        grid-column: 3/4;
+        text-align: center;
+        .button {
+          button {
+            animation-name: none;
+          }
+        }
+      }
+      .nav-list {
+        padding: 0;
+        margin: 0;
+        grid-row: 2/5;
+        grid-column: 1/7;
+        list-style: none;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        text-align: center;
+        display: inline;
+        visibility: initial;
+        animation: none;
+        li {
+          margin: 2em 0;
+        }
+        a {
+          color: $main;
+          text-decoration: none;
+          padding: 0 4em;
+        }
+      }
+      .toggle {
+        grid-column: 5/6;
+        margin: auto;
+        cursor: pointer;
+
+        span {
+          position: relative;
+          display: block;
+          width: 35px;
+          height: 2px;
+          background: $main;
+          margin: 8px 0;
+        }
+      }
+    }
+  }
+  //   ============= Hero ==============
+  .hero {
+    background-image: url(../../images/room.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 700px;
+    width: 100%;
+
+    .hero-logo {
+      text-align: center;
+      opacity: 1;
+      animation-name: fade-in;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      svg {
+        width: 300px;
+        margin: 7em 0 3em 0;
+        pointer-events: none;
+        .cls-1 {
+          fill: $main;
+        }
+      }
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 1.4em;
+      letter-spacing: 10px;
+      margin: 0 1em;
+    }
+    .show {
+      opacity: 1;
+    }
+  }
+
+  .hero {
+    .hero-logo-hide {
+      animation-name: fade-out;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+  }
+
+  //   =========== About ==========
+
+  .about {
+    margin-top: 2em;
+    background-image: url(../../images/booze.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 700px;
+    width: auto;
+    padding: 3em;
+
+    .border {
+      height: 100%;
+      width: auto;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      border: #9b9b9b solid 2px;
+
+      .content {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        color: white;
+        letter-spacing: 2px;
+        h1 {
+          margin: 1em;
+          letter-spacing: 4px;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+
+  //   ============ Menu ==========
+  .menu {
+    margin-top: 2em;
+    background-image: url(../../images/barbecue-barbeque-bbq-1268551.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 1em;
+
+    .content {
+      height: auto;
+      width: auto;
+      margin: 1em;
+      background-color: $background-menu;
+      color: black;
+      height: auto;
+      padding: 2em;
+
+      h1 {
+        font-size: 1.4em;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1em;
+        padding: 0;
+      }
+
+      .menu-button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        font-family: "Noto Serif SC", serif;
+        letter-spacing: 2px;
+        padding: 0.5em;
+        border-bottom: rgba(0, 0, 0, 0.7) solid 2px;
+        background-color: transparent;
+        color: black;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+          border-bottom-color: rgba(0, 0, 0, 0);
+          color: white;
+        }
+      }
+      .active {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom-color: rgba(0, 0, 0, 0);
+        color: white;
+      }
+
+      .button-content {
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        transition: 0.3s;
+
+        .menu-button-inner {
+          cursor: pointer;
+          border: none;
+          outline: none;
+          width: 100%;
+          text-align: center;
+          font-size: 1em;
+          font-family: "Noto Serif SC", serif;
+          letter-spacing: 2px;
+          padding: 0.5em;
+          border-bottom: rgba(255, 255, 255, 0.7) solid 2px;
+          background-color: transparent;
+          color: white;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-bottom-color: rgba(255, 255, 255, 0);
+            color: black;
+          }
+        }
+        .active-inner {
+          background-color: rgba(255, 255, 255, 0.7);
+          border-bottom-color: rgba(255, 255, 255, 0);
+          color: black;
+        }
+
+        .section-text {
+          display: grid;
+          grid-gap: 0.2em;
+          grid-template-columns: 1fr 1fr;
+          overflow: hidden;
+          opacity: 0;
+          max-height: 0;
+          transition: 0.3s;
+          text-align: center;
+          color: white;
+          .product {
+            h3 {
+              font-size: 0.8em;
+            }
+            h4 {
+              font-size: 0.7em;
+            }
+            h5 {
+              font-size: 0.5em;
+            }
+          }
+        }
+        .show-inner {
+          opacity: 1;
+          max-height: 1000px;
+        }
+      }
+      .show {
+        opacity: 1;
+        max-height: 1000px;
+      }
+    }
+  }
+
+  //   =========== Location =========
+  .location {
+    margin-top: 2em;
+    background-image: url(../../images/chairs-furniture-indoors-245535.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 1em;
+    .location-map {
+      opacity: 0.4;
+      transition: 0.3s;
+      height: 300px;
+      width: auto;
+      z-index: 999;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  //   ========== Footer =======
+  footer {
+    .footer-logo {
+      text-align: center;
+      opacity: 1;
+      svg {
+        text-align: center;
+        width: 250px;
+        margin: 0.2em;
+        pointer-events: none;
+        .cls-1 {
+          fill: black;
+        }
+      }
+    }
+    .social {
+      text-align: center;
+      p {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 1em;
+      }
+      ul {
+        display: inline-block;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+          font-size: 2em;
+          display: inline-block;
+          margin: 0 1em;
+
+          a {
+            color: $main;
+            transition: 0.3s;
+
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .links {
+      text-align: center;
+      margin: 2em 0;
+      padding: 0;
+      cursor: pointer;
+
+      li {
+        font-size: 0.8em;
+        display: inline-block;
+        margin: 0 1em;
+      }
+    }
+    .copy {
+      text-align: center;
+      padding-bottom: 1px;
+    }
+  }
+}

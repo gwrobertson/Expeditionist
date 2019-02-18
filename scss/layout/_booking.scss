@@ -1,0 +1,59 @@
+#booking {
+  .book {
+    margin-top: 2em;
+    background-image: url(../../images/bar-bottle-counter-1097530.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+
+    .container {
+      text-align: center;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 8fr 1fr;
+      .booking-form {
+        margin: 2em;
+        padding: 0.5em 1em 1em 1em;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: $background;
+        opacity: 0.8;
+
+        #button {
+          width: 250px;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        #guests {
+          margin: 0 10px;
+          font-size: 1em;
+        }
+        .sub {
+          letter-spacing: 2px;
+          font-size: 0.8em;
+          cursor: pointer;
+          color: black;
+          border: black 1px solid;
+          background-color: transparent;
+          padding: 1em 2em;
+          font-family: "Noto Serif SC", serif;
+          transition: 0.3s;
+          animation-name: fade-in;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+          &:hover {
+            background: $main;
+            color: black;
+          }
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}

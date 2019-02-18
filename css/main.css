@@ -1,0 +1,1137 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif SC", serif;
+  background-color: #8b7d77;
+  height: 2000px;
+  letter-spacing: 2px;
+}
+
+.fade-out-text {
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+h1 {
+  font-weight: 10;
+}
+
+#navigation .nav-bar-hide {
+  width: 100%;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  height: auto;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 6fr 2fr 2fr 1fr;
+      grid-template-columns: 2fr 4fr 6fr 2fr 2fr 1fr;
+      grid-template-areas: "logo . hide button . .";
+  position: fixed;
+  z-index: 1000;
+}
+
+#navigation .nav-bar-hide .logo {
+  padding: 0;
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+#navigation .nav-bar-hide .logo svg {
+  width: 65px;
+  padding: 0;
+  margin: 0;
+}
+
+#navigation .nav-bar-hide .logo svg .cls-1 {
+  fill: #ceccca;
+}
+
+#navigation .nav-bar-hide .wrapper {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: button;
+}
+
+#navigation .nav-bar-hide .wrapper .button button {
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  cursor: pointer;
+  color: #ceccca;
+  border: #ceccca 1px solid;
+  background-color: transparent;
+  padding: 1em 2em;
+  font-family: "Noto Serif SC", serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#navigation .nav-bar-hide .wrapper .button button:hover {
+  background: #ceccca;
+  color: black;
+}
+
+#navigation .nav-bar-hide .wrapper .button button:focus {
+  outline: 0;
+}
+
+#navigation .nav-bar-hide .nav-list {
+  padding: 0;
+  margin: 0;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: hide;
+  visibility: hidden;
+}
+
+#navigation .nav-bar-hide .nav-list a {
+  color: #ceccca;
+  text-decoration: none;
+  padding: 0 4em;
+}
+
+#navigation .nav-bar-hide .toggle {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  margin: auto;
+  cursor: pointer;
+}
+
+#navigation .nav-bar-hide .toggle span {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background: #ceccca;
+  margin: 8px 0;
+}
+
+#navigation .nav-bar {
+  background-color: rgba(0, 0, 0, 0.781);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 2fr 6fr 2fr 1fr;
+      grid-template-columns: 2fr 4fr 2fr 6fr 2fr 1fr;
+  position: fixed;
+  z-index: 1000;
+}
+
+#navigation .nav-bar .logo {
+  padding: 0;
+  margin: 0;
+}
+
+#navigation .nav-bar .logo svg {
+  width: 65px;
+  padding: 0;
+  margin: 0;
+}
+
+#navigation .nav-bar .wrapper {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navigation .nav-bar .wrapper .button button {
+  font-size: 0.8em;
+  cursor: pointer;
+  color: #ceccca;
+  background-color: transparent;
+  padding: 1em 2em;
+  font-family: "Noto Serif SC", serif;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+}
+
+#navigation .nav-bar .nav-list {
+  padding: 0;
+  margin: 0;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  visibility: initial;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  position: relative;
+}
+
+#navigation .nav-bar .nav-list a {
+  color: #ceccca;
+  text-decoration: none;
+  padding: 0 4em;
+  position: relative;
+}
+
+#navigation .nav-bar .nav-list a::after {
+  content: "";
+  display: block;
+  height: 0.08rem;
+  background: #ceccca;
+  position: absolute;
+  top: 1.8em;
+  left: 4em;
+  right: 4em;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform ease-in-out 200ms;
+  transition: -webkit-transform ease-in-out 200ms;
+  transition: transform ease-in-out 200ms;
+  transition: transform ease-in-out 200ms, -webkit-transform ease-in-out 200ms;
+}
+
+#navigation .nav-bar .nav-list a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+#navigation .nav-bar .toggle {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+  margin: auto;
+}
+
+#navigation .nav-bar .toggle span {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 2px;
+  background: #ceccca;
+  margin: 8px 0;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    right: -4em;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    right: -4em;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.hero {
+  background-image: url(../../images/room.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+
+.hero .hero-logo {
+  text-align: center;
+  opacity: 1;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.hero .hero-logo svg {
+  width: 450px;
+  margin: 7em 5em 3em 5em;
+  pointer-events: none;
+}
+
+.hero .hero-logo svg .cls-1 {
+  fill: #ceccca;
+}
+
+.hero h1 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  letter-spacing: 10px;
+  margin: 0 10em;
+}
+
+.hero .show {
+  opacity: 1;
+}
+
+.hero .hero-logo-hide {
+  -webkit-animation-name: fade-out;
+          animation-name: fade-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about {
+  margin-top: 2em;
+  background-image: url(../../images/booze.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  width: auto;
+  padding: 3em;
+}
+
+.about .border {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 1fr 2fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+  border: #9b9b9b solid 2px;
+}
+
+.about .border .content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.about .border .content h1 {
+  margin: 2em;
+  letter-spacing: 4px;
+  font-size: 1.8em;
+}
+
+.about .border .content p {
+  font-size: 1.2em;
+}
+
+.menu {
+  margin-top: 2em;
+  background-image: url(../../images/barbecue-barbeque-bbq-1268551.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 3em;
+}
+
+.menu .content {
+  height: auto;
+  width: auto;
+  margin: 5em;
+  background-color: #8b7d77d3;
+  color: black;
+  height: auto;
+  padding: 2em;
+}
+
+.menu .content h1 {
+  font-size: 1.8em;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+.menu .content .menu-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: "Noto Serif SC", serif;
+  letter-spacing: 2px;
+  padding: 0.5em;
+  border-bottom: rgba(0, 0, 0, 0.7) solid 2px;
+  background-color: transparent;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu .content .menu-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.menu .content .active {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.menu .content .button-content {
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu .content .button-content .menu-button-inner {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: "Noto Serif SC", serif;
+  letter-spacing: 2px;
+  padding: 0.5em;
+  border-bottom: rgba(255, 255, 255, 0.7) solid 2px;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu .content .button-content .menu-button-inner:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom-color: rgba(255, 255, 255, 0);
+  color: black;
+}
+
+.menu .content .button-content .active-inner {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom-color: rgba(255, 255, 255, 0);
+  color: black;
+}
+
+.menu .content .button-content .section-text {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  color: white;
+}
+
+.menu .content .button-content .section-text h3 {
+  text-transform: uppercase;
+}
+
+.menu .content .button-content .show-inner {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.menu .content .show {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.location {
+  margin-top: 2em;
+  background-image: url(../../images/chairs-furniture-indoors-245535.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 5em;
+}
+
+.location .location-map {
+  opacity: 0.4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 500px;
+  width: auto;
+  z-index: 999;
+}
+
+.location .location-map:hover {
+  opacity: 1;
+}
+
+footer .footer-logo {
+  text-align: center;
+  opacity: 1;
+}
+
+footer .footer-logo svg {
+  text-align: center;
+  width: 350px;
+  margin: 1em;
+  pointer-events: none;
+}
+
+footer .footer-logo svg .cls-1 {
+  fill: black;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social p {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+footer .social ul {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer .social ul li {
+  font-size: 2em;
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer .social ul li a {
+  color: #ceccca;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .social ul li a:hover {
+  color: black;
+}
+
+footer .links {
+  text-align: center;
+  margin: 2em 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+footer .links li {
+  font-size: 0.8em;
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer .copy {
+  text-align: center;
+  padding-bottom: 1px;
+}
+
+#booking .book {
+  margin-top: 2em;
+  background-image: url(../../images/bar-bottle-counter-1097530.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+#booking .book .container {
+  text-align: center;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 8fr 1fr;
+      grid-template-rows: 1fr 8fr 1fr;
+}
+
+#booking .book .container .booking-form {
+  margin: 2em;
+  padding: 0.5em 1em 1em 1em;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background-color: #8b7d77;
+  opacity: 0.8;
+}
+
+#booking .book .container .booking-form #button {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#booking .book .container .booking-form #guests {
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+#booking .book .container .booking-form .sub {
+  letter-spacing: 2px;
+  font-size: 0.8em;
+  cursor: pointer;
+  color: black;
+  border: black 1px solid;
+  background-color: transparent;
+  padding: 1em 2em;
+  font-family: "Noto Serif SC", serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#booking .book .container .booking-form .sub:hover {
+  background: #ceccca;
+  color: black;
+}
+
+#booking .book .container .booking-form .sub:focus {
+  outline: 0;
+}
+
+@media (max-width: 770px) {
+  #navigation .nav-bar-hide {
+    background-color: rgba(0, 0, 0, 0.781);
+    -ms-grid-columns: 2fr 4fr 4fr 2fr 2fr 1fr;
+        grid-template-columns: 2fr 4fr 4fr 2fr 2fr 1fr;
+  }
+  #navigation .nav-bar-hide .logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  #navigation .nav-bar-hide .wrapper {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    text-align: center;
+  }
+  #navigation .nav-bar-hide .wrapper .button button {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  #navigation .nav-bar-hide .nav-list {
+    padding: 0;
+    margin: 0;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    list-style: none;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: hide;
+    display: none;
+  }
+  #navigation .nav-bar-hide .nav-list a {
+    color: #ceccca;
+    text-decoration: none;
+    padding: 0 4em;
+  }
+  #navigation .nav-bar-hide .toggle {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    margin: auto;
+    cursor: pointer;
+  }
+  #navigation .nav-bar-hide .toggle span {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #ceccca;
+    margin: 8px 0;
+  }
+  #navigation .nav-bar-media {
+    background-color: rgba(0, 0, 0, 0.781);
+    -ms-grid-columns: 2fr 4fr 4fr 2fr 2fr 1fr;
+        grid-template-columns: 2fr 4fr 4fr 2fr 2fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  #navigation .nav-bar-media .logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  #navigation .nav-bar-media .wrapper {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    text-align: center;
+  }
+  #navigation .nav-bar-media .wrapper .button button {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
+  #navigation .nav-bar-media .nav-list {
+    padding: 0;
+    margin: 0;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    list-style: none;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    text-align: center;
+    display: inline;
+    visibility: initial;
+    -webkit-animation: none;
+            animation: none;
+  }
+  #navigation .nav-bar-media .nav-list li {
+    margin: 2em 0;
+  }
+  #navigation .nav-bar-media .nav-list a {
+    color: #ceccca;
+    text-decoration: none;
+    padding: 0 4em;
+  }
+  #navigation .nav-bar-media .toggle {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    margin: auto;
+    cursor: pointer;
+  }
+  #navigation .nav-bar-media .toggle span {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #ceccca;
+    margin: 8px 0;
+  }
+  .hero {
+    background-image: url(../../images/room.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 700px;
+    width: 100%;
+  }
+  .hero .hero-logo {
+    text-align: center;
+    opacity: 1;
+    -webkit-animation-name: fade-in;
+            animation-name: fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .hero .hero-logo svg {
+    width: 300px;
+    margin: 7em 0 3em 0;
+    pointer-events: none;
+  }
+  .hero .hero-logo svg .cls-1 {
+    fill: #ceccca;
+  }
+  .hero h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    letter-spacing: 10px;
+    margin: 0 1em;
+  }
+  .hero .show {
+    opacity: 1;
+  }
+  .hero .hero-logo-hide {
+    -webkit-animation-name: fade-out;
+            animation-name: fade-out;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .about {
+    margin-top: 2em;
+    background-image: url(../../images/booze.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 700px;
+    width: auto;
+    padding: 3em;
+  }
+  .about .border {
+    height: 100%;
+    width: auto;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+    -ms-grid-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    border: #9b9b9b solid 2px;
+  }
+  .about .border .content {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .about .border .content h1 {
+    margin: 1em;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+  }
+  .menu {
+    margin-top: 2em;
+    background-image: url(../../images/barbecue-barbeque-bbq-1268551.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 1em;
+  }
+  .menu .content {
+    height: auto;
+    width: auto;
+    margin: 1em;
+    background-color: #8b7d77d3;
+    color: black;
+    height: auto;
+    padding: 2em;
+  }
+  .menu .content h1 {
+    font-size: 1.4em;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  .menu .content .menu-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Noto Serif SC", serif;
+    letter-spacing: 2px;
+    padding: 0.5em;
+    border-bottom: rgba(0, 0, 0, 0.7) solid 2px;
+    background-color: transparent;
+    color: black;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .menu .content .menu-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  .menu .content .active {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+  .menu .content .button-content {
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .menu .content .button-content .menu-button-inner {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Noto Serif SC", serif;
+    letter-spacing: 2px;
+    padding: 0.5em;
+    border-bottom: rgba(255, 255, 255, 0.7) solid 2px;
+    background-color: transparent;
+    color: white;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .menu .content .button-content .menu-button-inner:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    color: black;
+  }
+  .menu .content .button-content .active-inner {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    color: black;
+  }
+  .menu .content .button-content .section-text {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0.2em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    text-align: center;
+    color: white;
+  }
+  .menu .content .button-content .section-text .product h3 {
+    font-size: 0.8em;
+  }
+  .menu .content .button-content .section-text .product h4 {
+    font-size: 0.7em;
+  }
+  .menu .content .button-content .section-text .product h5 {
+    font-size: 0.5em;
+  }
+  .menu .content .button-content .show-inner {
+    opacity: 1;
+    max-height: 1000px;
+  }
+  .menu .content .show {
+    opacity: 1;
+    max-height: 1000px;
+  }
+  .location {
+    margin-top: 2em;
+    background-image: url(../../images/chairs-furniture-indoors-245535.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 1em;
+  }
+  .location .location-map {
+    opacity: 0.4;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    height: 300px;
+    width: auto;
+    z-index: 999;
+  }
+  .location .location-map:hover {
+    opacity: 1;
+  }
+  footer .footer-logo {
+    text-align: center;
+    opacity: 1;
+  }
+  footer .footer-logo svg {
+    text-align: center;
+    width: 250px;
+    margin: 0.2em;
+    pointer-events: none;
+  }
+  footer .footer-logo svg .cls-1 {
+    fill: black;
+  }
+  footer .social {
+    text-align: center;
+  }
+  footer .social p {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1em;
+  }
+  footer .social ul {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  footer .social ul li {
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 1em;
+  }
+  footer .social ul li a {
+    color: #ceccca;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  footer .social ul li a:hover {
+    color: black;
+  }
+  footer .links {
+    text-align: center;
+    margin: 2em 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  footer .links li {
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 0 1em;
+  }
+  footer .copy {
+    text-align: center;
+    padding-bottom: 1px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

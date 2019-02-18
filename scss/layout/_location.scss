@@ -1,0 +1,22 @@
+.location {
+  margin-top: 2em;
+  background-image: url(../../images/chairs-furniture-indoors-245535.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 5em;
+  .location-map {
+    opacity: 0.4;
+    transition: 0.3s;
+    height: 500px;
+    width: auto;
+    z-index: 999;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

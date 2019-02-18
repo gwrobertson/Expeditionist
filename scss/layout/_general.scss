@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif SC", serif;
+  background-color: $background;
+  height: 2000px;
+  letter-spacing: 2px;
+}
+
+.fade-out-text {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  font-weight: 10;
+}

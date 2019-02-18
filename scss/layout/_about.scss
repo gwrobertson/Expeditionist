@@ -1,0 +1,36 @@
+.about {
+  margin-top: 2em;
+  background-image: url(../../images/booze.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  width: auto;
+  padding: 3em;
+
+  .border {
+    height: 100%;
+    width: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    border: #9b9b9b solid 2px;
+
+    .content {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      color: white;
+      letter-spacing: 2px;
+      h1 {
+        margin: 2em;
+        letter-spacing: 4px;
+        font-size: 1.8em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

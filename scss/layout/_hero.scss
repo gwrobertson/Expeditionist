@@ -1,0 +1,61 @@
+.hero {
+  background-image: url(../../images/room.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 700px;
+  width: 100%;
+
+  .hero-logo {
+    text-align: center;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    svg {
+      width: 450px;
+      margin: 7em 5em 3em 5em;
+      pointer-events: none;
+      .cls-1 {
+        fill: $main;
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 10px;
+    margin: 0 10em;
+  }
+  .show {
+    opacity: 1;
+  }
+}
+
+.hero {
+  .hero-logo-hide {
+    animation-name: fade-out;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

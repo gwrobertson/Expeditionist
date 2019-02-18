@@ -1,0 +1,63 @@
+footer {
+  .footer-logo {
+    text-align: center;
+    opacity: 1;
+    svg {
+      text-align: center;
+      width: 350px;
+      margin: 1em;
+      pointer-events: none;
+      .cls-1 {
+        fill: black;
+      }
+    }
+  }
+  .social {
+    text-align: center;
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 1em;
+    }
+    ul {
+      display: inline-block;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 2em;
+        display: inline-block;
+        margin: 0 1em;
+
+        a {
+          color: $main;
+          transition: 0.3s;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .links {
+    text-align: center;
+    margin: 2em 0;
+    padding: 0;
+    cursor: pointer;
+
+    li {
+      font-size: 0.8em;
+      display: inline-block;
+      margin: 0 1em;
+    }
+  }
+  .copy {
+    text-align: center;
+    padding-bottom: 1px;
+  }
+}
